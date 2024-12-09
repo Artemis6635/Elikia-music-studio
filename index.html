@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de musique</title>
+  <link rel="stylesheet" href="styles.css">
+  <style type="text/css">
+    /* Réinitialisation des styles par défaut */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("da.png");
+      background-size: cover;
+      font-size: 16px;
+      background-color: black;
+    }
+
+    @media screen and (min-width: 768px) {
+      body {
+        font-size: 20px;
+      }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    span {
+      color: yellow;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; /* Permet de passer à la ligne */
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap; /* Adapte les éléments aux petits écrans */
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .search-form {
+      display: flex;
+      margin-left: auto;
+    }
+
+    .search-form input[type="text"] {
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .search-form button[type="submit"] {
+      background-color: #ffcc00;
+      color: #333;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .search-form button[type="submit"]:hover {
+      background-color: #e6b800;
+    }
+
+    .logo {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+      max-width: 80px;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e6b800;
+    }
+
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(51, 51, 51, 0.8);
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .footer-info {
+      text-align: left;
+    }
+
+    .footer-intro {
+      text-align: right;
+    }
+
+    .intro-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .intro-text {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* Styles pour rendre le site responsive */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      nav ul li {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .search-form {
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-info, .footer-intro {
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+
+      .logo img {
+        max-width: 60px;
+      }
+
+      .btn {
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="3D LOGO COMPLETT 2021.png" alt="Logo"></a>
+      </div>
+      <h1>Elikia <span>Musique</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="projet etudiant.html">Administrateur</a></li>
+          <li><a href="#artiste">Artiste</a></li>
+        </ul>
+        <form action="#" method="get" class="search-form">
+          <input type="text" name="search" placeholder="Rechercher...">
+          <button type="submit">Rechercher</button>
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <section id="accueil">
+    <div class="container">
+      <h2 style="color: white;">Bienvenue sur notre site de musique</h2>
+      <a href="#contact" class="btn">Nous contacter</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <p>Tous droits réservés &copy; 2023 | Elikia Musique Studio</p>
+        <p>Créé le 4 octobre 2002</p>
+      </div>
+      <div class="footer-intro">
+        <h3 class="intro-title">Explorez votre talent musical</h3>
+        <p class="intro-text">Rejoignez-nous pour une expérience riche en créativité musicale.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
